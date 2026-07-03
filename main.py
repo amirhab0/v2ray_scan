@@ -172,11 +172,11 @@ class V2RayScanner:
             f.write(f"=" * 80 + "\n\n")
             
             for i, config in enumerate(self.results, 1):
-                f.write(f"{i}. {config['name']}\n")
-                f.write(f"   Type: {config['type']}\n")
-                f.write(f"   Server: {config['address']}:{config['port']}\n")
-                f.write(f"   Delay: {config['delay']:.0f}ms\n")
-                f.write(f"   Config: {config['raw']}\n\n")
+                #f.write(f"{i}. {config['name']}\n")
+                #f.write(f"   Type: {config['type']}\n")
+                #f.write(f"   Server: {config['address']}:{config['port']}\n")
+                #f.write(f"   Delay: {config['delay']:.0f}ms\n")
+                f.write(f"{config['raw']}\n\n")
         
         print(f"\nResults saved to {filename}")
 
